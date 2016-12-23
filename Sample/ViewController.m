@@ -21,6 +21,9 @@
     UITextField *passwordTextField;
     NSString *macid = @"";
     
+    
+    //This is master branch
+    
     NSURL *url = [NSURL URLWithString:[[NSString stringWithFormat:@"http://43.241.67.139:390/api/Login/verifyLoginCredentials?Email=%@&Password=%@&MacId=%@",emailTextField.text,passwordTextField.text,macid]stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]]];
     
     // Do any additional setup after loading the view, typically from a nib.
